@@ -36,7 +36,7 @@ export default class IndexPage extends React.Component {
               <LinkCollection linkData={linkData} />
               <h2 className="is-size-4 has-text-weight-bold"> Projects</h2>
               <LinkCollection linkData={linkData} />
-              <h2 className="has-text-weight-bold is-size-4">Latest Stories</h2>
+              <h2 className="has-text-weight-bold is-size-4">Doodles and words</h2>
             </div>
             {posts.map(({ node: post }) => (
               <div>
