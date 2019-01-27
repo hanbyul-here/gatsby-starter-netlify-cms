@@ -1,0 +1,24 @@
+nav a {
+  color: #333;
+}
+nav a:hover,
+nav a:focus {
+  color: #777;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+.spinner {
+  display: inline-block;
+  font-size: 0.65em;
+  letter-spacing: 0em;
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
