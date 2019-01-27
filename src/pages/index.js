@@ -22,6 +22,25 @@ const linkData = [
   }
 ]
 
+const projectData = [
+  {
+    "name": "Seoul Building Explorer",
+    "link": "https://hanbyul-here.github.io/seoul-building-explorer"
+  },
+  {
+    "name": "Mapping the Candles",
+    "link": "https://hanbyul-here.github.io/seoul-metro-turnstile-data/map/#lat=37.5601&lng=126.9794&z=14.3000"
+  },
+  {
+    "name": "OBJ Map Tile Exporter",
+    "link": "https://hanbyul-here.github.io/tile-exporter/"
+  },
+  {
+    "name": "SVG Map Tile Exporter",
+    "link": "http://svg-exporter.netlify.com/"
+  }
+]
+
 export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
@@ -35,11 +54,11 @@ export default class IndexPage extends React.Component {
               <h2 className="is-size-4 has-text-weight-bold"> Links</h2>
               <LinkCollection linkData={linkData} />
               <h2 className="is-size-4 has-text-weight-bold"> Projects</h2>
-              <LinkCollection linkData={linkData} />
+              <LinkCollection linkData={projectData} />
               <h2 className="has-text-weight-bold is-size-4">Doodles and words</h2>
             </div>
             {posts.map(({ node: post }) => (
-              <div>
+              <div key={`post-${post.frontmatter.title}`}>
                 <Link to={post.fields.slug}>
                   {post.frontmatter.title}
                 </Link>

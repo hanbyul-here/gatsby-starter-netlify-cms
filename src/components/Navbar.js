@@ -13,10 +13,6 @@ const Navbar = class extends React.Component {
                   <div className="has-text-weight-bold is-size-3">
                     Hanbyul <span className="spinner">✰</span> 한별
                   </div>
-                  <p id="subtitle-wrap">
-                    {' '}
-                    I am a programmer often making maps.
-                  </p>
                 </div>
               </Link>
             </div>
