@@ -24,6 +24,10 @@ const linkData = [
 
 const projectData = [
   {
+    "name": "Seoul Population By Time",
+    "link": "https://seoul-population-by-time.netlify.com/"
+  },
+  {
     "name": "Seoul Building Explorer",
     "link": "https://hanbyul-here.github.io/seoul-building-explorer"
   },
